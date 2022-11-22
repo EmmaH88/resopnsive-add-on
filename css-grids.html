@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      h1 h2,
+      h3 {
+        color: #231d3c;
+      }
+      .box {
+        background-color: blueviolet;
+        color: white;
+        display: flex;
+        font-size: 13px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .challenge-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+      }
+
+      .challenge-2 {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-gap: 5px;
+      }
+
+      .challenge-3 {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr 1fr);
+      }
+    </style>
+    <title>Pure CSS Grids</title>
+  </head>
+  <body>
+    <h3>Challenge 1</h3>
+    <p>Display the following boxes into a grid of 3 equal columns</p>
+
+    <div class="challenge-1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+    <h3>Challenge 2</h3>
+    <p>
+      Display the following boxes into a grid of 2 columns where the first takes
+      twice the amount of space than the second one
+    </p>
+    <div class="challenge-2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+    <h3>Challenge 3</h3>
+    <p>
+      Display the following boxes into a grid of 2 equal columns where the first
+      row takes twice the amount of space than the second row
+    </p>
+    <div class="challenge-3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </body>
+</html>
